@@ -21,11 +21,14 @@ function generate() {
 
 function drawAxiom() {
 	ctx.fillStyle = "#ffffff";
+	ctx.strokeStyle = "#000";
+	ctx.strokeWidth = 1;
+	
 	ctx.fillRect(offset.x, offset.y, canvas.width, canvas.height);
+	ctx.strokeRect(offset.x, offset.y, canvas.width, canvas.height);
 	var point = startPoint;
 	var angle = startAngle;
 	var step = stepLength;
-	ctx.strokeStyle = "#000";
 	ctx.strokeWidth = 2;
 	ctx.beginPath();
 	ctx.moveTo(point.x, point.y);
